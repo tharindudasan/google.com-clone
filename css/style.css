@@ -1,0 +1,95 @@
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Layouts */
+/* ==============Start of Header================== */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    border: 1px solid transparent;
+    align-items: center;
+    height: 60px;
+}
+
+header>a {
+    display: block;
+    color: rgba(0, 0, 0, 0.429);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#apps {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#apps:hover {
+    background-color: rgba(60, 64, 67, 0.8);
+    cursor: pointer;
+}
+
+#apps svg {
+    width: 24px;
+    height: 24px;
+    color: #5f6368;
+}
+
+#images {
+    padding: 0px 15px;
+}
+
+#sign-in {
+    font-weight: 500;
+    color: white;
+    background-color: rgb(26, 115, 232);
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 9px 23px;
+    margin: 0 12 0 8px;
+    min-width: 96px;
+}
+#sign-in :hover{
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+    text-decoration: none;
+}
+#sign-in:focus{
+    background-color: #1c5fba;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);;
+}
+#sign-in :active{
+    background-color: #1b63c1;
+    box-shadow:  0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
