@@ -1,0 +1,176 @@
+@import url(reset.css);
+@import url(responsive.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* LayOuts */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 46px;
+    margin-top: 6px;
+    flex-direction: row;
+}
+
+#head-line {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#image {
+    background-color: red;
+    width: 150px;
+    height: 37px;
+    padding: 4px 28px 0px 30px;
+}
+
+#image img {
+    width: 92px;
+    height: 30px;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-details {
+    display: flex;
+    width: 628px;
+    height: 39px;
+    padding: 5px 4px 0px 14px;
+    background-color: aqua;
+
+
+    border-radius: 16px;
+    background: #fff;
+    margin: 10px 0 10px;
+    box-shadow: none;
+    border: 1px solid #dfe1e5;
+}
+
+#text-box {
+    width: 529px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    font-size: 16px;
+}
+
+#txt-input {
+    width: 100%;
+    border: none;
+}
+
+#close {
+    display: flex;
+    width: 44px;
+    height: 28px;
+    padding: 0px 12px;
+    border-right: 1px solid rgba(0, 0, 0, 0.271);
+    align-items: center;
+}
+
+#close svg {
+    width: 20px;
+    height: 28px;
+}
+
+#mic {
+    display: flex;
+    width: 40px;
+    height: 30px;
+    padding: 0px 8px;
+    /* border: 1px solid rgb(8, 238, 61); */
+    align-items: center;
+}
+
+#mic svg {
+    width: 20px;
+    height: 20px;
+}
+
+#search {
+    display: flex;
+    width: 44px;
+    height: 30px;
+    padding: 0px 12px;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+#search svg {
+    width: 20px;
+    height: 20px;
+    fill: #4285f4;
+}
+
+#svg-icon {
+    background-color: chocolate;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#apps-icon-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* vertical-align: middle; */
+}
+
+#apps-icon-1 svg {
+    width: 1rem;
+}
+
+#apps-icon-1 div {
+    display: flex;
+    width: 70px;
+    height: 44px;
+    /* margin: 17px 5px 11px 5px; */
+    color: #70757a;
+    font-size: 14px;
+    /* align-items: center; */
+}
+
+#apps-icon-1 svg {
+    margin-right: 5px;
+}
+
+#apps-icon-1 a {
+    display: flex;
+    align-items: center;
+
+}
